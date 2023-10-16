@@ -1,0 +1,24 @@
+<!DOCTYPE validators PUBLIC "-//OpenSymphony Group//XWork Validator 1.0.3//EN" "http://www.opensymphony.com/xwork/xwork-validator-1.0.3.dtd">
+<validators>
+    <field name="username">
+        <field-validator type="requiredstring">
+            <message>The username cannot be empty.</message>
+        </field-validator>
+    </field>
+    <field name="password">
+        <field-validator type="requiredstring">
+            <message>The password cannot be empty.</message>
+        </field-validator>
+    </field>
+    <field name="confirmPassword">
+        <field-validator type="requiredstring">
+            <message>The confirmation password cannot be empty.</message>
+        </field-validator>
+        <field-validator type="fieldexpression">
+            <param name="expression">
+                <![CDATA[password.equals(confirmPassword)]]>
+            </param>
+            <message>The confirmation password does not match the password.</message>
+        </field-validator>
+    </field>
+</validators>

@@ -32,7 +32,7 @@
 </head>
 <body>
 <h1>注册</h1>
-<form action="registerAction" method="post" onsubmit="return validateForm()">
+<form action="register.action" method="post" onsubmit="return validateForm()">
     <label for="username">用户名:</label>
     <input type="text" id="username" name="username" required><br><br>
 

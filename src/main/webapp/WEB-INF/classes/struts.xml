@@ -3,6 +3,7 @@
         "-//Apache Software Foundation//DTD Struts Configuration 2.5//EN"
         "http://struts.apache.org/dtds/struts-2.5.dtd">
 <struts>
+
     <package name="basicstruts" extends="struts-default">
         <action name="index">
             <result>index.jsp</result>
@@ -10,6 +11,10 @@
         <action name="login" class="org.example.action.HelloAction" method="execute">
             <result name="success">/success.jsp</result>
             <result name="fail">/fail.jsp</result>
+        </action>
+        <action name="register" class="org.example.action.RegisterAction" method="execute">
+            <result name="success">/register-success.jsp</result>
+            <result name="error">/register-failure.jsp</result>
         </action>
     </package>
 </struts>
