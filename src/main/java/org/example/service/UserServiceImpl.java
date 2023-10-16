@@ -1,8 +1,8 @@
-package com.hdu.service;
+package org.example.service;
 
-import com.hdu.dao.UserDao;
-import com.hdu.dao.UserDaoImpl;
-import com.hdu.pojo.User;
+import org.example.dao.UserDao;
+import org.example.dao.UserDaoImpl;
+import org.example.pojo.User;
 
 public class UserServiceImpl implements UserService {
 
@@ -12,20 +12,17 @@ public class UserServiceImpl implements UserService {
         this.userDao = new UserDaoImpl();
     }
 
-    @Override
     public boolean register(User user) {
         boolean isFindUser = check(user);
         if(isFindUser) return false;
         return userDao.addUser(user);
     }
 
-    @Override
     public boolean check(User user) {
         User rsUser = userDao.findUserByUsername(user.getUsername());
         return rsUser != null;
     }
 
-    @Override
     public User login(String username, String password) {
         return userDao.findUserByUsernameAndPassword(username, password);
     }

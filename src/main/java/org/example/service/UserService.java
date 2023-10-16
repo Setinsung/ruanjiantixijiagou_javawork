@@ -1,6 +1,6 @@
-package com.hdu.service;
+package org.example.service;
 
-import com.hdu.pojo.User;
+import org.example.pojo.User;
 
 public interface UserService {
     boolean register(User user);

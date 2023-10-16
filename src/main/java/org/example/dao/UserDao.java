@@ -1,6 +1,6 @@
-package com.hdu.dao;
+package org.example.dao;
 
-import com.hdu.pojo.User;
+import org.example.pojo.User;
 
 public interface UserDao {
     boolean addUser(User user);

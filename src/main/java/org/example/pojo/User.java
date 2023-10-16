@@ -1,4 +1,4 @@
-package com.hdu.pojo;
+package org.example.pojo;
 
 public class User {
     private int id;

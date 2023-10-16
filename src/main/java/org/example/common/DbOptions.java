@@ -1,4 +1,4 @@
-package com.hdu.common;
+package org.example.common;
 
 public class DbOptions {
     private String driver = "com.mysql.cj.jdbc.Driver";

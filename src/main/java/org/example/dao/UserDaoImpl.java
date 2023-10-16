@@ -1,9 +1,9 @@
-package com.hdu.dao;
+package org.example.dao;
 
 import java.sql.*;
 
-import com.hdu.common.DbUtil;
-import com.hdu.pojo.User;
+import org.example.common.DbUtil;
+import org.example.pojo.User;
 
 public class UserDaoImpl implements UserDao {
     private Connection conn;
@@ -11,7 +11,6 @@ public class UserDaoImpl implements UserDao {
     public UserDaoImpl() {
     }
 
-    @Override
     public boolean addUser(User user) {
         this.conn = DbUtil.getConnection("root", "1q2w3e4r", "db1");
         String sql = "insert into user(id,username,password) values(?,?,?)";

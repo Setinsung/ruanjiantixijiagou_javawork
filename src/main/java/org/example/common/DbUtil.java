@@ -1,4 +1,4 @@
-package com.hdu.common;
+package org.example.common;
 
 import java.sql.*;
 

@@ -1,11 +1,11 @@
-package com.hdu;
+package org.example;
 
 import org.junit.Assert;
 import org.junit.Test;
 
-import com.hdu.pojo.User;
-import com.hdu.service.UserService;
-import com.hdu.service.UserServiceImpl;
+import org.example.pojo.User;
+import org.example.service.UserService;
+import org.example.service.UserServiceImpl;
 
 public class TestDemo {
     public static UserService userService = new UserServiceImpl();
